@@ -30,6 +30,7 @@
 }
 /* -------------------------------- */
 
+/* border box model: */
 html {
   box-sizing: border-box;
 }
@@ -40,6 +41,7 @@ html {
   box-sizing: inherit;
 }
 
+/* generic styles */
 body {
   padding: 0;
   margin: 0;
@@ -59,10 +61,10 @@ ul {
 
 li {
   padding: 1rem 0rem;
-  border-bottom: 0.2rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
 }
 
-li:active {
+li:hover {
   border-image: linear-gradient(
       90deg,
       var(--lime-green) 0%,
@@ -70,7 +72,7 @@ li:active {
     )
     1;
   border-style: solid;
-  border-width: 0 0 0.2rem 0;
+  border-width: 0 0 0.3rem 0;
 }
 
 /* credits */
@@ -83,11 +85,11 @@ li:active {
   color: hsl(228, 45%, 44%);
 }
 
-/* --------- */
+/* navigation */
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   font-size: var(--sm-font-size);
@@ -119,6 +121,11 @@ button:active {
 
 .desktop-only {
   display: none;
+}
+
+.hero-image {
+  max-width: 100%;
+  object-position: 0 -9.25rem;
 }
 
 /* 800px */
