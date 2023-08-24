@@ -25,6 +25,7 @@
     <script src="./scripts/script.js" defer></script>
   </head>
   <body>
+    <div class="overlay"></div>
     <header>
       <nav id="navbar">
         <a href="/">
@@ -37,15 +38,9 @@
         >
           <span class="sr-only">Open main menu</span>
           <img src="./images/icon-hamburger.svg" aria-hidden="true" />
-          <!-- <span class="sr-only icon-contract">Close main menu</span>
-          <img
-            src="./images/icon-close.svg"
-            aria-hidden="true"
-            class="icon-contract"
-          /> -->
         </a>
-        <div class="nav-links desktop-only">
-          <ul>
+        <div class="desktop-only">
+          <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
@@ -55,6 +50,15 @@
         </div>
         <button class="desktop-only">Request Invite</button>
       </nav>
+      <div class="modal-menu mobile-only">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
     </header>
     <section class="hero">
       <img
@@ -62,12 +66,15 @@
         alt="app mockups"
         class="hero-image"
       />
-      <h1>Next generation digital banking</h1>
-      <p>
-        Take your financial life online. Your Easybank account will be a
-        one-stop-shop for spending, saving, budgeting, investing, and much more.
-      </p>
-      <button>Request Invite</button>
+      <div class="hero-text">
+        <h1>Next generation<br />digital banking</h1>
+        <p>
+          Take your financial life online. Your Easybank account will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much
+          more.
+        </p>
+        <button>Request Invite</button>
+      </div>
     </section>
 
     Request Invite Why choose Easybank? We leverage Open Banking to turn your
