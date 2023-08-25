@@ -217,7 +217,7 @@ h1 {
   padding: 2.5rem 1.25rem;
 }
 
-article {
+.feature {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,7 +231,7 @@ h2 {
   font-weight: 400;
 }
 
-article h4 {
+.feature h4 {
   color: var(--dark-blue);
   font-weight: 300;
 }
