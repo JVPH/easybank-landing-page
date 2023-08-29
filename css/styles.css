@@ -67,6 +67,10 @@ p {
   padding: 2.5rem 1.25rem;
 }
 
+.section-light-grayish-blue {
+  background-color: var(--light-grayish-blue);
+}
+
 /* credits */
 
 .attribution {
@@ -218,6 +222,7 @@ h1 {
 
 /* features section */
 
+/* change this to section etc */
 .features {
   background-color: var(--light-grayish-blue);
   /* padding: 2.5rem 1.25rem; */
@@ -333,5 +338,21 @@ footer button {
 
   .mobile-only {
     display: none;
+  }
+
+  .features {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .feature {
+    align-items: start;
+    text-align: start;
   }
 }
