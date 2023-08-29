@@ -268,6 +268,7 @@ h2 {
 }
 
 article {
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   max-width: 22.75rem;
@@ -368,6 +369,21 @@ footer button {
   .feature {
     align-items: start;
     text-align: start;
+  }
+
+  .article-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .article-list article {
+    width: 16.625rem;
+  }
+
+  .article-list img {
+    max-width: 100%;
   }
 
   footer {
