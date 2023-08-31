@@ -75,9 +75,18 @@ p {
   background-color: var(--dark-blue);
 }
 
+.section-very-light-gray {
+  background-color: var(--very-light-gray);
+}
+
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 /* credits */
@@ -192,9 +201,9 @@ button:active {
 
 /* hero section */
 
-.hero {
+/* .hero {
   background-color: var(--very-light-gray);
-}
+} */
 
 .hero-image {
   max-width: 100%;
@@ -260,9 +269,15 @@ h2 {
 
 .articles {
   background-color: var(--very-light-gray);
-  text-align: start;
+}
+
+.articles h2 {
+  text-align: center;
+}
+
+.article-list {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   gap: 2rem;
 }
@@ -350,16 +365,6 @@ footer button {
     display: none;
   }
 
-  header nav {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .features {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
   .features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -372,14 +377,8 @@ footer button {
   }
 
   .article-list {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  .article-list article {
-    width: 16.625rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .article-list img {
@@ -392,8 +391,6 @@ footer button {
     grid-template-areas:
       "logo linksCol1 linksCol2 inviteBtn"
       "socialMedia linksCol1 linksCol2 copyright";
-    max-width: 1400px;
-    margin: 0 auto;
     padding: 2.1875rem;
   }
 
