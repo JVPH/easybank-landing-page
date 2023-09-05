@@ -61,6 +61,11 @@ p {
   font-size: var(--sm-font-size);
 }
 
+header {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-text,
 .features,
 .articles {
@@ -101,12 +106,8 @@ a {
 
 .overlay.on {
   position: fixed;
-  inset: 3.4rem 0 0 0;
-  background-image: linear-gradient(
-    180deg,
-    var(--dark-blue) 0%,
-    transparent 100%
-  );
+  inset: 3.5rem 0 0 0;
+  background-image: linear-gradient(var(--dark-blue), transparent);
 }
 
 .no-scroll {
@@ -199,9 +200,26 @@ button:active {
 
 /* hero section */
 
-.hero-image {
-  max-width: 100%;
-  object-position: 0 -9.25rem;
+.hero-img {
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 17rem;
+  position: relative;
+}
+
+.hero-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../images/image-mockups.png");
+  background-size: 100%;
+  background-position: center bottom;
+
+  /* background-repeat: no-repeat; */
+  /* background-position: center bottom; */
 }
 
 .heading {
@@ -214,18 +232,19 @@ h1 {
   font-weight: 300;
   font-size: calc(var(--font-size) * 2.25);
 }
-.hero-text p {
-  line-height: 1.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
 
 .hero-text {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   /* padding: 2rem; */
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
+}
+
+.hero-text p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .hero-text button {
@@ -234,10 +253,8 @@ h1 {
 
 /* features section */
 
-/* change this to section etc */
 .features {
   background-color: var(--light-grayish-blue);
-  /* padding: 2.5rem 1.25rem; */
 }
 
 .feature {
@@ -297,11 +314,6 @@ article {
   font-weight: 300;
   color: var(--dark-blue);
 }
-
-/* article img {
-  border-radius: 5px 5px 0 0;
-  height: 12.5rem;
-} */
 
 article p {
   font-size: 0.8rem;
