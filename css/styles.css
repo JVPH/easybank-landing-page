@@ -179,6 +179,7 @@ button {
   all: unset;
   cursor: pointer;
   padding: 0.8rem 1.86rem;
+  font-size: 0.9rem;
   font-weight: 700;
   background: linear-gradient(
     90deg,
@@ -363,10 +364,6 @@ footer {
 
 .footer-links li:last-child {
   margin-bottom: 1.25rem;
-}
-
-footer button {
-  font-size: small;
 }
 
 /* 800px */
